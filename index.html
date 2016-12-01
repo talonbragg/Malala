@@ -1,9 +1,11 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
       body {
         font-family: 'Quicksand';
+        text-align: center;
       }
       .box {
         border: 1px solid black;
@@ -19,6 +21,13 @@
         font-style: italic;
       }
     </style>
+    <script>
+      $(document).ready(function() {
+        $(window).load(function() {
+          $('body').fadeIn('slow');
+        });
+      });
+    </script>
   </head>
   <body>
     <h1>Theme of <div class="title"><strong>I am Malala</strong></div></h1>
