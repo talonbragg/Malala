@@ -20,22 +20,62 @@
       .title {
         font-style: italic;
       }
-      .hidden {
+      .hidden1 {
+        display: none;
+      }
+      .hidden2 {
+        display: none;
+      }
+      .boxHidden3 {
+        display: none;
+      }
+      .hidden6 {
+        display: none;
+      }
+      .boxHidden4 {
+        display: none;
+      }
+      .hidden5 {
         display: none;
       }
     </style>
     <script>
       $(document).ready(function () {
-        $('.hidden').fadeIn(3000).removeClass('hidden');
+        $('.hidden1').fadeIn(1000).removeClass('hidden1');
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.hidden2').fadeIn(2000).removeClass('hidden2');
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.boxHidden3').fadeIn(3000).removeClass('boxHidden3');
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.hidden6').fadeIn(4000).removeClass('hidden6');
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.boxHidden4').fadeIn(5000).removeClass('boxHidden4');
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.hidden5').fadeIn(3000).removeClass('hidden5');
       });
     </script>
   </head>
-  <body class="hidden">
-    <h1>Theme of <div class="title"><strong>I am Malala</strong></div></h1>
-      <p>The theme of this story is mainly, <strong>appreciate what you have and the importance of education.</strong> I will show this with two quotes from the book.</p>
-      <p class='box'>"I wasn't sad. I wasn't scared. I just thought: It doesn't matter what I look like. I am alive. I was thankful"(Yousafzai 145).</p>
-      <p>This shows that she didn't care what happened when she got shot, she is fine with it and will move on because the past is in the past.</p>
-      <p class="box">"'Please bring my schoolbag,' I begged. 'Exams are coming up.'"</p>
-      <p>This evidence shows the importance of education because even when she had just gotten shot, she is still thinking about education.</p>
+  <body class="">
+    <h1 class="hidden1">Theme of <div class="title"><strong>I am Malala</strong></div></h1>
+      <p class="hidden2">The theme of this story is mainly, <strong>appreciate what you have and the importance of education.</strong> I will show this with two quotes from the book.</p>
+      <p class='boxHidden3'>"I wasn't sad. I wasn't scared. I just thought: It doesn't matter what I look like. I am alive. I was thankful"(Yousafzai 145).</p>
+      <p class="hidden6">This shows that she didn't care what happened when she got shot, she is fine with it and will move on because the past is in the past.</p>
+      <p class="boxHidden4">"'Please bring my schoolbag,' I begged. 'Exams are coming up.'"</p>
+      <p class="hidden5">This evidence shows the importance of education because even when she had just gotten shot, she is still thinking about education.</p>
   </body>
 </html>
