@@ -6,7 +6,6 @@
       body {
         font-family: 'Quicksand';
         text-align: center;
-        visibility: hidden;
       }
       .box {
         border: 1px solid black;
@@ -21,12 +20,17 @@
       .title {
         font-style: italic;
       }
+      .hidden {
+        display: none;
+      }
     </style>
     <script>
-      $("body").hide(0).delay(400).fadeIn(3000);
+      $(document).ready(function () {
+        $('.hidden').fadeIn(1000).removeClass('hidden');
+      });
     </script>
   </head>
-  <body>
+  <body class="hidden">
     <h1>Theme of <div class="title"><strong>I am Malala</strong></div></h1>
       <p>The theme of this story is mainly, <strong>appreciate what you have and the importance of education.</strong> I will show this with two quotes from the book.</p>
       <p class='box'>"I wasn't sad. I wasn't scared. I just thought: It doesn't matter what I look like. I am alive. I was thankful"(Yousafzai 145).</p>
